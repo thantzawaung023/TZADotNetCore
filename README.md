@@ -1,1 +1,3 @@
 # TZADotNetCore
+
+Nuget Package = npm
