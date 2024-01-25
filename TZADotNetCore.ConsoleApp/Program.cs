@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Threading.Tasks.Dataflow;
 using TZADotNetCore.ConsoleApp.AdoDotNetExamples;
 using TZADotNetCore.ConsoleApp.DapperExamples;
+using TZADotNetCore.ConsoleApp.EFCoreExamples;
 
 Console.WriteLine("Hello, World!");
 
@@ -51,8 +52,13 @@ foreach (DataRow row in dataTable.Rows)
 
 /*AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 adoDotNetExample.Run();*/
-
+/*
 DapperExample dapperExample = new DapperExample();
-dapperExample.Run();
+dapperExample.Run();*/
+
+EFCoreExample efCoreExample = new EFCoreExample();
+efCoreExample.Run();
+
+
 
 Console.ReadKey();
