@@ -139,8 +139,6 @@ namespace TZADotNetCore.ConsoleApp.AdoDotNetExamples
             string message = result > 0 ? "Saving Successful." : "Saving Failed.";
             Console.WriteLine(message);
 
-
-
         }
 
         private void Update(int id, string title, string author, string content)
