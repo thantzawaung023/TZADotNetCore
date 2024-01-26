@@ -77,6 +77,10 @@ namespace TZADotNetCore.RestApi.Controllers
                 return BadRequest("Blog_Content is required.");
             }
 
+            item.Blog_Title = blog.Blog_Title;
+            item.Blog_Author = blog.Blog_Title;
+            item.Blog_Content = blog.Blog_Content;
+
             int result = _dbContext.SaveChanges();
             var message = result > 0 ? "Updating Successful." : "Updating Failed.";
             return Ok(message);
