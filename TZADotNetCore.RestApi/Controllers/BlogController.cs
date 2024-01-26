@@ -86,7 +86,6 @@ namespace TZADotNetCore.RestApi.Controllers
             return Ok(message);
         }
 
-
         [HttpPatch("{id}")]
         public IActionResult PatchBlog(int id, BlogDataModel blog)
         {
@@ -113,7 +112,6 @@ namespace TZADotNetCore.RestApi.Controllers
             var message = result > 0 ? "Updating Successful." : "Updating Failed.";
             return Ok(message);
         }
-
 
         [HttpDelete("{id}")]
         public IActionResult DeleteBlog(int id)

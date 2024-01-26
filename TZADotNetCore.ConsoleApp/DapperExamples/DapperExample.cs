@@ -75,7 +75,6 @@ namespace TZADotNetCore.ConsoleApp.DapperExamples
             Console.WriteLine(item.Blog_Content);
             Console.WriteLine("---------------------");
 
-
         }
 
         private void Create(string title, string author, string content)
