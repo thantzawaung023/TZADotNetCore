@@ -6,9 +6,10 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TZADotNetCore.ConsoleApp.Models;
+using TZADotNetCore.RestApi.Models;
 
-namespace TZADotNetCore.ConsoleApp.EFCoreExamples
+
+namespace TZADotNetCore.RestApi
 {
     public class AppDbContext : DbContext
     {
@@ -22,7 +23,7 @@ namespace TZADotNetCore.ConsoleApp.EFCoreExamples
                 InitialCatalog = "TZADotNetCore",
                 UserID = "sa",
                 Password = "sa@123",
-                TrustServerCertificate = true
+                TrustServerCertificate = true,
             };
             optionsBuilder.UseSqlServer(_sqlConnectionStringBuilder.ConnectionString);
         }

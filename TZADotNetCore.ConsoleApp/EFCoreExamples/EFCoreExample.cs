@@ -15,12 +15,12 @@ namespace TZADotNetCore.ConsoleApp.EFCoreExamples
         private readonly AppDbContext _dbContext = new AppDbContext();
         public void Run()
         {
-            Read();
-            Edit(2);
-            Edit(19);
-            Create("test title", "test author", "test content"); 
+            //Read();
+            //Edit(2);
+            //Edit(19);
+            //Create("test title", "test author", "test content"); 
             Update(10, "Test Title", "Test Author", "Test Content");
-            Delete(13);
+            //Delete(13);
         }
 
         private void Read()
@@ -91,6 +91,7 @@ namespace TZADotNetCore.ConsoleApp.EFCoreExamples
             item.Blog_Author = author;
             item.Blog_Content = content;
 
+            _dbContext.Update(item);
             int result = _dbContext.SaveChanges();
 
             string message = result > 0 ? "Updating Successful." : "Updating Failed.";
@@ -107,7 +108,7 @@ namespace TZADotNetCore.ConsoleApp.EFCoreExamples
                 return;
             }
             _dbContext.Remove(item);
-            int result = _dbContext.SaveChanges();
+            int result = _dbContext.SaveChanges();  
 
             string message = result > 0 ? "Deleting Successful." : "Deleting Failed.";
             Console.WriteLine(message);
