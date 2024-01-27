@@ -101,7 +101,7 @@ namespace TZADotNetCore.RestApi.Controllers
             }
             if (!string.IsNullOrEmpty(blog.Blog_Author))
             {
-                item.Blog_Author = blog.Blog_Title;
+                item.Blog_Author = blog.Blog_Author;
             }
             if (!string.IsNullOrEmpty(blog.Blog_Content))
             {

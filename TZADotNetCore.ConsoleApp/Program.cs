@@ -5,6 +5,7 @@ using TZADotNetCore.ConsoleApp.AdoDotNetExamples;
 using TZADotNetCore.ConsoleApp.DapperExamples;
 using TZADotNetCore.ConsoleApp.EFCoreExamples;
 using TZADotNetCore.ConsoleApp.HttpClientExamples;
+using TZADotNetCore.ConsoleApp.RefitExamples;
 using TZADotNetCore.ConsoleApp.RestClientExamples;
 
 Console.WriteLine("Hello, World!");
@@ -63,8 +64,14 @@ efCoreExample.Run();*/
 
 /*HttpClientExample httpClientExample = new HttpClientExample();
 await httpClientExample.RunAsync();*/
- 
-RestClientExample restClientExample = new RestClientExample();  
-await restClientExample.RunAsync();
+
+/*RestClientExample restClientExample = new RestClientExample();  
+await restClientExample.RunAsync();*/
+
+Console.WriteLine("Wait for loading....");
+Console.ReadLine();
+
+RefitExample refitExample = new RefitExample();
+await refitExample.Run();
 
 Console.ReadKey();
