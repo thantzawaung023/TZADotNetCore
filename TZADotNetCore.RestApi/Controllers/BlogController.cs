@@ -78,7 +78,7 @@ namespace TZADotNetCore.RestApi.Controllers
             }
 
             item.Blog_Title = blog.Blog_Title;
-            item.Blog_Author = blog.Blog_Title;
+            item.Blog_Author = blog.Blog_Author;
             item.Blog_Content = blog.Blog_Content;
 
             int result = _dbContext.SaveChanges();

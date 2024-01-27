@@ -4,6 +4,8 @@ using System.Threading.Tasks.Dataflow;
 using TZADotNetCore.ConsoleApp.AdoDotNetExamples;
 using TZADotNetCore.ConsoleApp.DapperExamples;
 using TZADotNetCore.ConsoleApp.EFCoreExamples;
+using TZADotNetCore.ConsoleApp.HttpClientExamples;
+using TZADotNetCore.ConsoleApp.RestClientExamples;
 
 Console.WriteLine("Hello, World!");
 
@@ -56,9 +58,13 @@ adoDotNetExample.Run();*/
 DapperExample dapperExample = new DapperExample();
 dapperExample.Run();*/
 
-EFCoreExample efCoreExample = new EFCoreExample();
-efCoreExample.Run();
+/*EFCoreExample efCoreExample = new EFCoreExample();
+efCoreExample.Run();*/
 
-
+/*HttpClientExample httpClientExample = new HttpClientExample();
+await httpClientExample.RunAsync();*/
+ 
+RestClientExample restClientExample = new RestClientExample();  
+await restClientExample.RunAsync();
 
 Console.ReadKey();
