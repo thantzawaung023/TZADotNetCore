@@ -1,7 +1,7 @@
 # TZADotNetCore
 
-business 1 => repo ,data access 1 => dataaccess 1
-business 1 => repo ,data access 2 => dataaccess 2
+business 1 => repo , data access 1 => dataaccess 1
+business 1 => repo , data access 2 => dataaccess 2
 
 Repo
 - CRUD
@@ -16,7 +16,7 @@ business 1
 Transfer
 - Balance Check
 - Form Account = - Amountt
-- Tp Account = + Amount
+- To Account = + Amount
 
 - repo = data access 1
 
@@ -42,24 +42,24 @@ api	-
 
 http method
 ---------------------
-get		=> read
-post	=> create
-put		=> update
-patch	=> update
-delete	=> delete
+- get		=> read, 
+- post	=> create, 
+- put		=> update, 
+- patch	=> update, 
+- delete	=> delete
 
 http status code
 ---------------------
-200 - ok
-404 - not found
-500 - internal server error
-402,403,409
+- 200 - ok
+- 404 - not found
+- 500 - internal server error
+- 402,403,409
 
-100-199		=> Information responses
-200-299		=> Successful responses
-300-399		=> Redirection messages
-400-499		=> Client error responses
-500-599		=> Server error responses
+- 100-199		=> Information responses
+- 200-299		=> Successful responses
+- 300-399		=> Redirection messages
+- 400-499		=> Client error responses
+- 500-599		=> Server error responses
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
